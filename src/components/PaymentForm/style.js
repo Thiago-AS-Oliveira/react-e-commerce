@@ -12,7 +12,6 @@ const Style = {
     height: 100%;
     padding: 0 10px;
 
-    overflow: hidden;
     position: relative;
 
     display: flex;
@@ -29,6 +28,35 @@ const Style = {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 15px;
+  `,
+
+  Content: styled.div`
+    width: 100%;
+    height: 70%;
+    padding: 0 5px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: var(--magnolia);
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--bunker-opaque);
+      border-radius: 5px;
+    }
+
+    ${large({
+      height: "auto",
+      padding: "20px 5px",
+    })}
   `,
 
   ButtonWrapper: styled.div`

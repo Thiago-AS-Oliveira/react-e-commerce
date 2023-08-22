@@ -8,13 +8,22 @@ const PaymentForm = ({ submit, isProcessing, changeComponent }) => {
   return (
     <Style.Form onSubmit={submit}>
       <Style.Title>Preencha os dados de Pagamento</Style.Title>
-      <Style.InfoContainer>
-        Cartão Fake
-        <Style.Info>4242 4242 4242 4242</Style.Info>
-        <Style.Info>Validade: 12/34 CVC: 123</Style.Info>
-      </Style.InfoContainer>
 
-      <PaymentElement options={{ layout: "tabs" }} />
+      <Style.Content>
+        <Style.InfoContainer>
+          Cartão Fake
+          <Style.Info>4242 4242 4242 4242</Style.Info>
+          <Style.Info>Validade: 12/34 CVC: 123</Style.Info>
+        </Style.InfoContainer>
+
+        <Style.InfoContainer>
+          Cartão Fake
+          <Style.Info>4242 4242 4242 4242</Style.Info>
+          <Style.Info>Validade: 12/34 CVC: 123</Style.Info>
+        </Style.InfoContainer>
+
+        <PaymentElement options={{ layout: "tabs" }} />
+      </Style.Content>
 
       <Style.ButtonWrapper>
         <Style.Button

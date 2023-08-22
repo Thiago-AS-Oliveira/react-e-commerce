@@ -143,7 +143,7 @@ const SideMenu = ({ showMenu, openMenu }) => {
         Periféricos
       </Style.MenuItem>
 
-      <Style.MenuItem to="/produtos/category=fonesbluetooth">
+      <Style.MenuItem to="/produtos/category=fones bluetooth">
         Fones Bluetooth
       </Style.MenuItem>
 
